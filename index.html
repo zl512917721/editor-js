@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js"></script>
+  <title>富文本编辑器</title>
+</head>
+<body>
+  <div class="editor-wrap" style="margin-top: 200px;transform: translateX(-50%);position:relative;left: 50%;">
+    <ul class="editor-menu clearfix" id='editorMenu'>
+      <li>
+        <i class="iconfont icon-Font-Name"></i>
+        <a href="javascript:;">
+          <span class="menu-more" id='fontFamily'>
+            <span data-family='Microsoft Yahei'>微软雅黑</span>
+            <span data-family='simhei'>宋体</span>
+            <span data-family='PingFang SC'>平方(仅mac)</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <i class="iconfont icon-font"></i>
+        <a href="javascript:;">
+          <span class="menu-more" id='fontSize'>
+            <span data-size='1'>12px</span>
+            <span data-size='2'>14px</span>
+            <span data-size='3'>16px</span>
+            <span data-size='4'>18px</span>
+            <span data-size='5'>24px</span>
+            <span data-size='6'>32px</span>
+            <span data-size='7'>48px</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:;">
+          <label for="fontColor"><i class="iconfont icon-zitiyanse"></i></label>
+        </a>
+        <input type="color" id='fontColor'>
+      </li>
+      <li>
+        <a href="javascript:;">
+          <label for="fontBackColor"><i class="iconfont icon-zitiyanse1"></i></label>
+        </a>
+        <input type="color" id="fontBackColor">
+      </li>
+      
+      <li class="fr" id='saveEditor'>保存</li>
+    </ul>
+    <div class="editor-area" id="editorArea" value='Click to Editor...'></div>
+  </div>
+</body>
+</html>
